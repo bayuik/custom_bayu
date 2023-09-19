@@ -1,0 +1,18 @@
+<odoo>
+    <record id="import_so_lines" model="ir.ui.view">
+        <field name="name">import.so.lines</field>
+        <field name="model">import.so.lines</field>
+        <field name="arch" type="xml">
+            <form string="Import SO Lines">
+                <group>
+                    <field name="file" widget="binary" filename="filename"/>
+                </group>
+                <footer>
+                    <button name="import_excel" string="Import" type="object" class="oe_highlight"/>
+                    <button name="download_template" string="Download Template" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="oe_link" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
